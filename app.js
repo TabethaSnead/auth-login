@@ -9,7 +9,6 @@ signUpForm.addEventListener('submit', async (e) => {
     const data = new FormData(signUpForm);
     await signupUser(data.get('email'), data.get('password'));
     redirectIfLoggedIn();
-    console.log(data);
 });
 
 signInForm.addEventListener('submit', async (e) => {
@@ -17,7 +16,6 @@ signInForm.addEventListener('submit', async (e) => {
     const data = new FormData(signInForm);
     await signInUser(data.get('email'), data.get('password'));
     redirectIfLoggedIn();
-    console.log(data);
 });
 // Wire up sign in and sign up forms to supabase
 // Redirect to /other-page on successful auth
