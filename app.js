@@ -15,6 +15,7 @@ signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(signInForm);
     await signInUser(data.get('email'), data.get('password'));
+
     redirectIfLoggedIn();
 });
 // Wire up sign in and sign up forms to supabase

@@ -2,6 +2,7 @@ import { checkAuth, logout } from '../fetch-utils.js';
 
 const logoutButton = document.getElementById('logout');
 // use checkAuth function to redirect is user not authenticated
+
 window.addEventListener('load', async () => {
     if (!checkAuth()) window.location.href = '../';
 });
