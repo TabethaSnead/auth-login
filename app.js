@@ -19,5 +19,6 @@ signInForm.addEventListener('submit', async (e) => {
     redirectIfLoggedIn();
 });
 // Wire up sign in and sign up forms to supabase
+redirectIfLoggedIn();
 // Redirect to /other-page on successful auth
 // Redirect to /other-page when page loads if user is authenticated
